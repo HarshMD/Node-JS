@@ -1,0 +1,4 @@
+First line of output
+Second line of output
+Third line of output
+Final line - stream closed after this
