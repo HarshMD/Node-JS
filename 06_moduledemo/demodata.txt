@@ -1,0 +1,28 @@
+A text file (sometimes spelled textfile; an old alternative name is flat file) is a kind of computer file that is structured as a sequence of lines of electronic text. A text file exists stored as data within a computer file system.
+
+In operating systems such as CP/M, where the operating system does not keep track of the file size in bytes, the end of a text file is denoted by placing one or more special characters, known as an end-of-file (EOF) marker, as padding after the last line in a text file.[1] In modern operating systems such as DOS, Microsoft Windows and Unix-like systems, text files do not contain any special EOF character, because file systems on those operating systems keep track of the file size in bytes.[2]
+
+Some operating systems, such as Multics, Unix-like systems, CP/M, DOS, the classic Mac OS, and Windows, store text files as a sequence of bytes, with an end-of-line delimiter at the end of each line. Other operating systems, such as OpenVMS and OS/360 and its successors, have record-oriented filesystems, in which text files are stored as a sequence either of fixed-length records or of variable-length records with a record-length value in the record header.
+
+"Text file" refers to a type of container, while plain text refers to a type of content.
+
+At a generic level of description, there are two kinds of computer files: text files and binary files.[3]
+
+Data storage
+icon
+This section does not cite any sources. Please help improve this section by adding citations to reliable sources. Unsourced material may be challenged and removed. (September 2024) (Learn how and when to remove this message)
+
+A stylized iconic depiction of a CSV-formatted text file
+Because of their simplicity, text files are commonly used for storage of information. They avoid some of the problems encountered with other file formats, such as endianness, padding bytes, or differences in the number of bytes in a machine word. Further, when data corruption occurs in a text file, it is often easier to recover and continue processing the remaining contents. A disadvantage of text files is that they usually have a low entropy, meaning that the information occupies more storage than is strictly necessary.
+
+A simple text file may need no additional metadata (other than knowledge of its character set) to assist the reader in interpretation. A text file may contain no data at all, which is a case of zero-byte file.
+
+Encoding
+icon
+This section does not cite any sources. Please help improve this section by adding citations to reliable sources. Unsourced material may be challenged and removed. (September 2024) (Learn how and when to remove this message)
+The ASCII character set is the most common compatible subset of character sets for English-language text files, and is generally assumed to be the default file format in many situations. It covers American English, but for the British pound sign, the euro sign, or characters used outside English, a richer character set must be used. In many systems, this is chosen based on the default locale setting on the computer it is read on. Prior to UTF-8, this was traditionally single-byte encodings (such as ISO-8859-1 through ISO-8859-16) for European languages and wide character encodings for Asian languages.
+
+Because encodings necessarily have only a limited repertoire of characters, often very small, many are only usable to represent text in a limited subset of human languages. Unicode is an attempt to create a common standard for representing all known languages, and most known character sets are subsets of the very large Unicode character set. Although there are multiple character encodings available for Unicode, the most common is UTF-8, which has the advantage of being backwards-compatible with ASCII; that is, every ASCII text file is also a UTF-8 text file with identical meaning. UTF-8 also has the advantage that it is easily auto-detectable. Thus, a common operating mode of UTF-8 capable software, when opening files of unknown encoding, is to try UTF-8 first and fall back to a locale dependent legacy encoding when it definitely is not UTF-8.
+
+Formats
+On most operating systems, the name text file refers to a file format that allows only plain text content with very little formatting (e.g., no bold or italic types). Such files can be viewed and edited on text terminals or in simple text editors. Text files usually have the MIME type text/plain, usually with additional information indicating an encoding.
